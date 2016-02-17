@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "watch": "postcss -u postcss-import -u postcss-cssnext -o ./css/app.min.css ./css/app.css -w",
-    "build": "postcss -u postcss-import -u postcss-cssnext -o ./css/app.min.css ./css/app.css",
+    "watch": "postcss -u postcss-import -u postcss-cssnext -u cssnano -o ./css/app.min.css ./css/app.css -w",
+    "build": "postcss -u postcss-import -u postcss-cssnext -u cssnano -o ./css/app.min.css ./css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +28,7 @@
     "normalize.css": "^3.0.3"
   },
   "devDependencies": {
+    "cssnano": "^3.5.2",
     "postcss": "^5.0.16",
     "postcss-cli": "^2.5.1",
     "postcss-cssnext": "^2.4.0",
