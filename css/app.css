@@ -8,6 +8,7 @@
 @import 'basscss-colors';
 @import 'basscss-border-colors';
 @import 'basscss-darken';
+@import 'basscss-typography';
 
 /* some global rewrites */
 body {
@@ -101,7 +102,7 @@ header .logo {
     margin: 0 0 1em;
 }
 .content a, .content a:visited {
-    color: #ff3535
+    color: #ff3535;
 }
 /* variables */
 :root {

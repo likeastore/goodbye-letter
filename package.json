@@ -27,6 +27,7 @@
     "basscss-btn-primary": "^1.1.0",
     "basscss-colors": "^2.1.0",
     "basscss-darken": "^1.1.0",
+    "basscss-typography": "^3.0.3",
     "normalize.css": "^3.0.3"
   },
   "devDependencies": {
