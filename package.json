@@ -1,0 +1,18 @@
+{
+  "name": "goodbye-letter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/likeastore/goodbye-letter.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/likeastore/goodbye-letter/issues"
+  },
+  "homepage": "https://github.com/likeastore/goodbye-letter#readme"
+}
