@@ -6,6 +6,8 @@
   "scripts": {
     "watch": "postcss -u postcss-import -u postcss-cssnext -u cssnano -o ./css/app.min.css ./css/app.css -w",
     "build": "postcss -u postcss-import -u postcss-cssnext -u cssnano -o ./css/app.min.css ./css/app.css",
+    "start": "http-server . -p 5500 -o",
+    "start:watch": "npm run watch & npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,6 +31,7 @@
   },
   "devDependencies": {
     "cssnano": "^3.5.2",
+    "http-server": "^0.8.5",
     "postcss": "^5.0.16",
     "postcss-cli": "^2.5.1",
     "postcss-cssnext": "^2.4.0",
