@@ -88,13 +88,21 @@ header .logo {
     max-width: 600px;
     width: 90%;
 }
+.content .date {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    color: #b5b5b5;
+}
 .content p {
     font-size: 17px;
     line-height: 1.5;
     vertical-align: baseline;
     margin: 0 0 1em;
 }
-
+.content a, .content a:visited {
+    color: #ff3535
+}
 /* variables */
 :root {
     --font-family: 'Helvetica Neue', 'Arial', sans-serif;
