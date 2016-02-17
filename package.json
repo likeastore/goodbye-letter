@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "watch": "postcss -u postcss-import -u postcss-cssnext -o ./css/app.min.css ./css/app.css -w",
+    "build": "postcss -u postcss-import -u postcss-cssnext -o ./css/app.min.css ./css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,5 +16,22 @@
   "bugs": {
     "url": "https://github.com/likeastore/goodbye-letter/issues"
   },
-  "homepage": "https://github.com/likeastore/goodbye-letter#readme"
+  "homepage": "https://github.com/likeastore/goodbye-letter#readme",
+  "dependencies": {
+    "basscss": "^8.0.0",
+    "basscss-border-colors": "^2.0.1",
+    "basscss-btn": "^1.1.1",
+    "basscss-btn-outline": "^1.1.0",
+    "basscss-btn-primary": "^1.1.0",
+    "basscss-colors": "^2.1.0",
+    "basscss-darken": "^1.1.0",
+    "normalize.css": "^3.0.3"
+  },
+  "devDependencies": {
+    "postcss": "^5.0.16",
+    "postcss-cli": "^2.5.1",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-import": "^8.0.2",
+    "postcss-loader": "^0.8.1"
+  }
 }

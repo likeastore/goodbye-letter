@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@import 'normalize.css';
+@import 'basscss';
+@import 'basscss-btn';
+@import 'basscss-btn-primary';
+@import 'basscss-btn-outline';
+@import 'basscss-colors';
+@import 'basscss-border-colors';
+@import 'basscss-darken';
+
+/* some global rewrites */
+body {
+    color: #444;
+    background-color: #f3f3f6;
+    background-color: rgba(243, 243, 246, 0.1);
+    font: 400 16px var(--font-family);
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--h-font-family);
+}
+.b2 {
+    border-width: 2px!important;
+}
+.caps {
+    letter-spacing: .1em;
+}
+blockquote {
+    font-style: italic;
+    line-height: 1.5;
+}
+hr {
+    border: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #000;
+    border-bottom-color: rgba(0,0,0,.125);
+}
+
+/* app styles */
+header {
+    background-image: url('../assets/bg.png');
+    background-size: 300px;
+    background-position: 5px 5px;
+    position: relative;
+}
+header .overlay,
+header .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+header .overlay {
+    background-image: -webkit-linear-gradient(45deg,rgba(57, 204, 204, 0.75),rgba(0,255,127,.7));
+    background-image: linear-gradient(45deg,rgba(57, 204, 204, 0.75),rgba(0,255,127,.7));
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+    z-index: 1;
+}
+header .overlay2 {
+    background-image: url('../assets/bg2.png');
+    background-size: 300px;
+    background-position: 5px 5px;
+    opacity: .9;
+    z-index: 2;
+}
+header .title {
+    position: relative;
+    z-index: 3;
+    cursor: default;
+}
+header .logo {
+    width: 140px;
+    margin-top: 5px;
+}
+@media (max-width: 500px) {
+    header .title .main-text {
+        font-size: 24px;
+    }
+}
+.content {
+    max-width: 600px;
+    width: 90%;
+}
+.content p {
+    font-size: 17px;
+    line-height: 1.5;
+    vertical-align: baseline;
+    margin: 0 0 1em;
+}
+
+/* variables */
+:root {
+    --font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    --h-font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
+}
