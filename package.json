@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "watch": "postcss -u postcss-import -u postcss-cssnext -u cssnano -o ./css/app.min.css ./css/app.css -w",
-    "build": "postcss -u postcss-import -u postcss-cssnext -u cssnano -o ./css/app.min.css ./css/app.css",
-    "start": "http-server . -p 5500 -o",
+    "watch": "postcss -u postcss-import -u postcss-cssnext -u cssnano -o ./public/css/app.min.css ./public/css/app.css -w",
+    "build": "postcss -u postcss-import -u postcss-cssnext -u cssnano -o ./public/css/app.min.css ./public/css/app.css",
+    "start": "http-server ./public -p 5500 -o",
     "start:watch": "npm run watch & npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
